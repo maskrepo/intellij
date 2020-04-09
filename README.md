@@ -13,4 +13,4 @@ sudo docker run -rm -u 1000 \
   -v ~/dev/intellij/share:/home/developer/.local/share/JetBrains \
   -v ~/dev/projets:/home/developer/Project \
   --name idea-$(head -c 4 /dev/urandom | xxd -p)-$(date +'%Y%m%d-%H%M%S') \
-legeniedesalpages/intellij:latest
+mygreffe/intellij:latest
