@@ -2,6 +2,7 @@
 Projet de construction de l'image docker pour intellij
 
 # lancement de l'image
+```editorconfig
 sudo docker run -rm -u 1000 \
   -e DISPLAY=${DISPLAY} \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -14,3 +15,4 @@ sudo docker run -rm -u 1000 \
   -v ~/dev/projets:/home/developer/Project \
   --name idea-$(head -c 4 /dev/urandom | xxd -p)-$(date +'%Y%m%d-%H%M%S') \
 mygreffe/intellij:latest
+```
